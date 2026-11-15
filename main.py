@@ -14,6 +14,12 @@ load_dotenv()
 api_key = os.getenv("OPENAI_API_KEY")
 model = os.getenv("OPENAI_MODEL", "gpt-5.5")
 
+print("DEBUG: API KEY FOUND:", bool(api_key))
+print("DEBUG: MODEL:", model)
+
+if not api_key:
+    raise ValueError("OPENAI_API_KEY is missing in Render!")
+
 # OpenAI client
 client = OpenAI(api_key=api_key)
 
