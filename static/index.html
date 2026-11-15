@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My AI Assistant</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #question {
+            width: 75%;
+            padding: 12px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #answer {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f2f2f2;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🤖 My AI Assistant</h1>
+
+    <input type="text" id="question" placeholder="Ask me anything...">
+
+    <button onclick="askAI()">Ask AI</button>
+
+    <div id="answer">
+        AI response will appear here...
+    </div>
+
+
+    <script>
+
+        async function askAI() {
+
+            const question =
+                document.getElementById("question").value;
+
+            if (!question) {
+                return;
+            }
+
+            document.getElementById("answer").innerText =
+                "AI is thinking...";
+
+            const response = await fetch(
+                `/ask?question=${encodeURIComponent(question)}`
+            );
+
+            const data = await response.json();
+
+            document.getElementById("answer").innerText =
+                data.answer;
+        }
+
+    </script>
+
+</body>
+
+</html>

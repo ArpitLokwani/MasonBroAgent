@@ -1,0 +1,28 @@
+
+MASONBRO COMPANY INFORMATION
+
+Company:
+MasonBro provides home masonry and construction services.
+
+Location:
+MasonBro currently serves customers in Bangalore, India.
+
+Services:
+1. Brickwork and wall construction.
+2. Plastering.
+3. Flooring and tiling.
+
+Booking Process:
+1. Customers select a required service.
+2. Customers submit a booking request.
+3. The MasonBro operations team assigns a suitable mason.
+4. The mason contacts the customer to understand the work.
+5. The mason may visit the property for inspection.
+6. The mason provides a quotation.
+7. Work starts after the quotation is approved.
+
+Customer Communication:
+The assigned mason may contact customers through phone calls or WhatsApp to collect photographs and understand work requirements.
+
+Important:
+A quotation should be approved before the work begins.
