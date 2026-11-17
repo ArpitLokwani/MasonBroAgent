@@ -1,7 +1,0 @@
-class Dog:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age 
-
-dog = Dog("Buddy", 3)
-print(dog.name)  # Output: "Buddy"
